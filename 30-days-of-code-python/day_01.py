@@ -9,7 +9,7 @@ import sys
 
 VERBOSE=0
 
-n = int(input())
+# n = int(input())
 
 # if n % 2:
 #     print("Weird")
@@ -33,17 +33,20 @@ def conditional_test_odd_even(n):
 def conditional_test_range_2_5(n):
     try:
         if (2 <= n <= 5):
-            print("Not Weird")
+            return "Not Weird"
         elif (6 <= n <= 20):
-            print("Weird")
+            return "Weird"
         else:
-            print("Not Weird")
+            return "Not Weird"
     except Exception as e: 
         print(f"An exception occurred during conditional_test_range_2_5: {e}")
 
-if conditional_test_odd_even(n):
-    conditional_test_range_2_5(n)
-else:
-    print("Weird")
+def main(args):
+    n=int(args[1])
+    if conditional_test_odd_even(n):
+        print(conditional_test_range_2_5(n))
+    else:
+        print("Weird")
 
-
+if __name__ == '__main__':
+    main(sys.argv)
