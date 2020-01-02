@@ -5,11 +5,11 @@ import sys
 # Print a string literal saying "Hello, World." to stdout.
 
 def print_out(input):
-    print(input)
+    return input
 
 def main(args):
     statement="Hello, World!"
-    print_out(statement)
+    print(print_out(statement))
 
 if __name__ == '__main__':
     main(sys.argv)

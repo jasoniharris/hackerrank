@@ -3,7 +3,7 @@ from template import *
 
 class TestFactorialMethods(unittest2.TestCase):
 
-    def test_output(self):
+    def test_template(self):
         args = ["xxx"]
         self.assertTrue(main(args))
 
