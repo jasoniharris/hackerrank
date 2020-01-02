@@ -16,8 +16,10 @@ def product(x, y):
     return x * y
 
 def main(args):
-    n1 = int(args[1])
-    n2 = int(args[2])
+    # n1=int(args[1])
+    # n2=int(args[2])
+    n1 = int(input())
+    n2 = int(input())
 
     print(sum(n1, n2))
     print(difference(n1, n2))
